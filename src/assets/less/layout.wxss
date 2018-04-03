@@ -1,0 +1,30 @@
+.login .weui-cells {
+  background: none;
+  margin-top: 0;
+}
+.login .weui-cells .weui-label {
+  color: #fff;
+}
+.login .weui-cells .weui-cell {
+  padding: 0 10px;
+}
+.login .weui-cells::after {
+  border: none;
+}
+.login .weui-cells::before {
+  border: none;
+}
+.login .weui-btn {
+  margin-top: 15px;
+  height: 55px;
+  border-radius: 0;
+}
+.queue .vux-header-left {
+  color: #fff !important;
+  font-size: 18px !important;
+  line-height: 18px !important;
+}
+.queue .vux-header-right {
+  line-height: 16px !important;
+  color: #fff !important;
+}

@@ -1,0 +1,69 @@
+.queue ul {
+  position: absolute;
+  top: 32px;
+  right: -15px;
+  z-index: 100;
+  width: 140%;
+  background: #fff;
+  box-shadow: 0px 1px 1px 1px #eee;
+  height: 0;
+  transition: height 0.2s;
+  overflow: hidden;
+}
+.queue ul.active {
+  height: 160px;
+}
+.queue li {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #666;
+}
+.queue .select-status span {
+  vertical-align: middle;
+  font-size: 16px;
+}
+.queue .select-status i {
+  padding-left: 20px;
+  vertical-align: middle;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0 10px 10px;
+}
+.box span,
+.box a {
+  font-size: 20px;
+  color: #666;
+}
+.box span i,
+.box a i {
+  font-size: 18px;
+}
+.weui-grid {
+  border-bottom: 10px solid #eee;
+}
+.box-item dd {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  color: #666;
+  font-size: 16px;
+}
+.box-item dd span {
+  vertical-align: middle;
+}
+.box-item dd span.no {
+  font-size: 30px;
+  padding-top: 5px;
+  color: #ff5722;
+}
+.box-item dd i {
+  vertical-align: top;
+  font-size: 18px;
+}

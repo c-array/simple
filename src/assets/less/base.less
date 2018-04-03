@@ -1,0 +1,132 @@
+*{
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  width:100%;
+  margin: 0;
+  font: 400 16px Helvetica !important;
+  background-color: #fff;
+}
+blockquote,
+dd,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+input,
+label,
+li,
+ol,
+p,
+select,
+strong,
+table,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+dd,
+dl,
+dt,
+li,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #303030;
+  font-family: Helvetica;
+}
+img,
+table,
+td {
+  border: 0;
+}
+table,
+td,
+tr {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button:focus {
+  outline: 0 !important;
+}
+
+a { text-decoration: none;}
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  outline: 0;
+}
+[disabled] {
+  cursor: not-allowed !important;
+}
+button,
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  border-color: #ccc;
+  &::-moz-placeholder{
+    color: #8492a6;
+  }
+  &::-webkit-input-placeholder{
+    color: #8492a6;
+  }
+  &&:-ms-input-placeholder{
+    color: #8492a6;
+  }
+}
+[class^="icon"], [class*=" icon"] {
+  font-family:"iconfont" !important;
+
+  /* 以下内容参照第三方图标库本身的规则 */
+  font-size: 22px;
+  font-style: normal;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+[v-cloak] {
+  display: none;
+}
+
+.inner{
+  height:100%;
+}
+.bg-white{
+  background-color: #fff;
+}
+.right{
+  float: right !important;
+}
+.left{
+  float: left !important;
+}
+.center{
+  max-width: 540px;
+  margin: 0 auto !important;
+}
+
+@import "./layout.less";
