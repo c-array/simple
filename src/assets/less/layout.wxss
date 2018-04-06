@@ -28,3 +28,10 @@
   line-height: 16px !important;
   color: #fff !important;
 }
+.queue-detail .vux-header-right {
+  top: 8px !important;
+}
+.queue-user .check-box .weui-textarea {
+  background: none;
+  font-family: "Microsoft YaHei";
+}

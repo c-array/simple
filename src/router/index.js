@@ -58,6 +58,30 @@ export default new Router({
           }
         }
       ]
+    },
+    {
+      path: '/queue/detail',
+      name: 'detail',
+      component: resolve => require(['@/components/queue/detail'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/queue/user',
+      name: 'user',
+      component: resolve => require(['@/components/queue/user'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/queue/evaluate',
+      name: 'evaluate',
+      component: resolve => require(['@/components/queue/evaluate'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
     }
   ]
 })

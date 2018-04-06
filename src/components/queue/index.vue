@@ -15,11 +15,11 @@
         <tab>
             <tab-item @on-item-click="vm.tabId = item.id" :selected="vm.tabId == item.id" :key="item.id" v-for="item in vm.tabs">{{item.name}}</tab-item>
         </tab>
-        <grid v-show="vm.tabId == 1" :cols="1">
-            <grid-item :key="i" v-for="i in 3">
+        <div class="list" v-show="vm.tabId == 1">
+            <div class="list-item" v-for="item in 3">
                 <div class="box">
                     <span>取号中</span>
-                    <router-link to="/">详情<i class="icon-right"></i></router-link>
+                    <router-link to="/queue/detail">详情<i class="icon-right"></i></router-link>
                 </div>
                 <dl class="box-item">
                     <dd>
@@ -28,7 +28,7 @@
                     </dd>
                     <dd>
                         <span>姓名</span>
-                        <span>将-卡尔</span>
+                        <span>Array</span>
                     </dd>
                     <dd>
                         <span>性别</span>
@@ -42,9 +42,18 @@
                         <span>时间</span>
                         <span>2018-04-03 20:22:30</span>
                     </dd>
+                    <dd>
+                        <img src="../../assets/images/timg.jpg" alt="">
+                        <img src="../../assets/images/timg.jpg" alt="">
+                        <img src="../../assets/images/timg.jpg" alt="">
+                    </dd>
+                    <dd>
+                        <x-button text="过号"></x-button>
+                        <x-button type="primary" text="开始剪发"></x-button>
+                    </dd>
                 </dl>
-            </grid-item>
-        </grid>
+            </div>
+        </div>
     </div>
 </template>
 <style scoped lang="less">

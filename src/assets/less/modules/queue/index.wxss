@@ -43,17 +43,40 @@
 .box a i {
   font-size: 18px;
 }
-.weui-grid {
-  border-bottom: 10px solid #eee;
+.list {
+  background-color: #eee;
+  padding: 10px;
+  height: calc(100% - 90px);
+  overflow-y: auto;
+}
+.list-item {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  background-color: #fff;
 }
 .box-item dd {
   display: flex;
   justify-content: space-between;
-  height: 40px;
   line-height: 40px;
-  padding: 0 15px;
+  padding: 0 10px;
   color: #666;
   font-size: 16px;
+}
+.box-item dd:last-child {
+  padding-top: 10px;
+}
+.box-item dd button {
+  width: 49%;
+  margin: 0;
+  border-radius: 0;
+  height: 50px;
+}
+.box-item dd button::after {
+  border-radius: 0;
+}
+.box-item dd img {
+  width: 32%;
+  height: 32%;
 }
 .box-item dd span {
   vertical-align: middle;
@@ -66,4 +89,188 @@
 .box-item dd i {
   vertical-align: top;
   font-size: 18px;
+}
+.queue-detail {
+  background-color: #eee;
+}
+.queue-detail .content {
+  height: calc(100% - 46px);
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+.queue-detail .vux-header-right {
+  top: 5px;
+}
+.queue-detail .switch button {
+  padding: 5px;
+  background-color: #E64340;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.queue-detail section {
+  margin-top: 10px;
+  background-color: #fff;
+}
+.queue-detail article {
+  text-align: center;
+  padding: 10px 0;
+}
+.queue-detail article img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.queue-detail article p {
+  padding-top: 10px;
+}
+.queue-detail .history {
+  color: #333;
+  font-size: 14px;
+}
+.queue-detail li {
+  display: flex;
+  padding: 10px;
+}
+.queue-detail li.praise {
+  border-top: 1px solid #eee;
+  align-items: center;
+}
+.queue-detail li.praise span {
+  color: #333;
+  font-weight: bold;
+}
+.queue-detail li .d-rt {
+  flex: 1;
+  text-align: right;
+}
+.queue-detail li.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+.queue-detail li.space-between .d-lt {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+.queue-detail li .d-lt {
+  width: 100px;
+  font-size: 15px;
+  color: #333;
+}
+.queue-detail li .describe {
+  flex: 1;
+  font-size: 15px;
+  color: #999;
+}
+.queue-detail li .link {
+  flex: 1;
+  text-align: right;
+  color: #ccc;
+}
+.queue-detail .action {
+  display: flex;
+}
+.queue-detail .action i {
+  font-size: 16px;
+  padding: 0 5px;
+}
+.queue-detail .action a {
+  height: 25px;
+  line-height: 25px;
+  color: #666;
+  border: 1px solid #eee;
+  padding: 0 5px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.queue-detail .action a.active {
+  color: #f00;
+  border-color: #f00;
+}
+.queue-detail .reference span {
+  font-weight: bold;
+  color: #333;
+}
+.queue-detail .reference .history-img {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+}
+.queue-detail .reference .history-img img {
+  width: 32%;
+  height: 32%;
+}
+.queue-user {
+  background-color: #eee;
+}
+.queue-user .content {
+  height: calc(100% - 46px);
+  overflow-y: auto;
+}
+.queue-user .content .confirm {
+  border-radius: 0;
+}
+.check-box {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.check-box.check-sex .vux-checker-box {
+  display: block;
+}
+.check-box.check-sex .vux-checker-box .check-item {
+  margin-right: 10px;
+}
+.check-box input {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.check-box .vux-checker-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.check-box .check-item {
+  padding: 0 17px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #999;
+  background: #ffffff url("../../../images/check.png") no-repeat right bottom;
+}
+.check-box .check-item:nth-child(5n+0) {
+  margin-right: 0;
+}
+.check-box .check-item-selected {
+  background: #ffffff url("../../../images/checked.png") no-repeat right bottom;
+  border-color: #ff4a00;
+  color: #ff4a00;
+}
+.check-box .vux-x-textarea {
+  margin-top: 15px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+.check-box .vux-x-textarea::before {
+  border: none;
+}
+.check-box .vux-x-textarea .weui-textarea {
+  background: none;
+}
+.queue-evaluate {
+  background-color: #eee;
+}
+.queue-evaluate .content {
+  height: calc(100% - 46px);
+  overflow-y: auto;
 }
