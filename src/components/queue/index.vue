@@ -57,7 +57,7 @@
         <div class="list" v-show="vm.tabId == 2">
                 <div class="list-item" v-for="item in 3">
                     <div class="box">
-                        <span>取号中</span>
+                        <span>已完成</span>
                         <router-link to="/queue/detail">详情<i class="icon-right"></i></router-link>
                     </div>
                     <dl class="box-item">
