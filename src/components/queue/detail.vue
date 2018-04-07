@@ -60,9 +60,9 @@
                 <ul class="reference">
                     <li>
                         <span>参考发型</span>
-                        <div class="link">
+                        <router-link tag="div" class="link" to="/queue/reference">
                             <i class="icon-right"></i>
-                        </div>
+                        </router-link>
                     </li>
                     <li class="history-img">
                         <img src="../../assets/images/timg.jpg" alt="">

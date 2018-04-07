@@ -82,6 +82,14 @@ export default new Router({
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
       }
+    },
+    {
+      path: '/queue/reference',
+      name: 'reference',
+      component: resolve => require(['@/components/queue/reference'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
     }
   ]
 })

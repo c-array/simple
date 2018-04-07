@@ -32,6 +32,13 @@
         }
     }
 }
+
+.content{
+    height: calc(~"100% - 46px");
+    overflow-y: auto;
+    background-color: #eee;
+}
+
 .box{
     display: flex;
     justify-content: space-between;
@@ -99,11 +106,6 @@
 }
 
 .queue-detail{
-    .content{
-        height: calc(~"100% - 46px");
-        overflow-y: auto;
-        padding-bottom: 10px;
-    }
     .vux-header-right{
         top: 5px;
     }
@@ -216,13 +218,6 @@
 
 .queue-user{
     background-color: #eee;
-    .content{
-        height: calc(~"100% - 46px");
-        overflow-y: auto;
-        .confirm{
-            border-radius: 0;
-        }
-    }
 }
 
 .check-box{
@@ -286,8 +281,98 @@
 
 .queue-evaluate{
     background-color: #eee;
-    .content{
-        height: calc(~"100% - 46px");
-        overflow-y: auto;
+    .evaluate-box{
+        background-color: #fff;
+        margin-bottom: 10px;
+        dt{
+            display: flex;
+            padding: 10px;
+            .user-info{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                article{
+                    padding: 0 10px 0;
+                }
+                p{
+                    font-size: 16px;
+                   &:last-child{
+                        padding-top:5px;
+                        font-size: 14px;
+                        color: #999;
+                   }
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+            }
+            .eval-right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex:1;
+                text-align: right;
+                .vux-rater{
+                    text-align: right;
+                }
+                span{
+                    font-size: 14px;
+                    padding-right: 5px;
+                    color: #999;
+                }
+            }
+        }
+        dd{
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            &.address{
+                align-items: center;
+            }
+            p{
+                font-size: 14px;
+                color: #666;
+            }
+            img{
+                width: 32%;
+                height: 32%;
+            }
+            article,span{
+                font-size: 14px;
+                color: #666;
+                &:first-child{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+.queue-reference{
+    .reference-box{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        li{
+            flex:0 0 33.33%;
+            background-color: #fff;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 10px 0;
+            &:nth-child(2n+0){
+                padding: 10px;
+            }
+        }
+        img{
+            width: 100%;
+            height: 90px;
+            margin-right: 2%;
+            margin-bottom: 5px;
+            &:nth-child(4n + 0){
+                margin-right: 0;
+            }
+        }
     }
 }
