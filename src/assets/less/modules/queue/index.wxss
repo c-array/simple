@@ -28,38 +28,33 @@
   padding-left: 20px;
   vertical-align: middle;
 }
-.content {
-  height: calc(100% - 46px);
-  overflow-y: auto;
-  background-color: #eee;
-}
-.box {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  padding: 0 10px 10px;
-}
-.box span,
-.box a {
-  font-size: 20px;
-  color: #666;
-}
-.box span i,
-.box a i {
-  font-size: 18px;
-}
-.list {
+.queue .list {
   background-color: #eee;
   padding: 10px;
   height: calc(100% - 90px);
   overflow-y: auto;
 }
-.list-item {
+.queue .list-item {
   padding: 10px 0;
   margin-bottom: 10px;
   background-color: #fff;
 }
-.box-item dd {
+.queue .box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0 10px 10px;
+}
+.queue .box span,
+.queue .box a {
+  font-size: 20px;
+  color: #666;
+}
+.queue .box span i,
+.queue .box a i {
+  font-size: 18px;
+}
+.queue .box-item dd {
   display: flex;
   justify-content: space-between;
   line-height: 40px;
@@ -67,33 +62,41 @@
   color: #666;
   font-size: 16px;
 }
-.box-item dd:last-child {
+.queue .box-item dd:last-child {
   padding-top: 10px;
 }
-.box-item dd button {
+.queue .box-item dd button {
   width: 49%;
   margin: 0;
   border-radius: 0;
   height: 50px;
 }
-.box-item dd button::after {
+.queue .box-item dd button::after {
   border-radius: 0;
 }
-.box-item dd img {
+.queue .box-item dd img {
   width: 32%;
   height: 32%;
 }
-.box-item dd span {
+.queue .box-item dd span {
   vertical-align: middle;
 }
-.box-item dd span.no {
+.queue .box-item dd span.no {
   font-size: 30px;
   padding-top: 5px;
   color: #ff5722;
 }
-.box-item dd i {
+.queue .box-item dd span.no.success {
+  color: #999;
+}
+.queue .box-item dd i {
   vertical-align: top;
   font-size: 18px;
+}
+.content {
+  height: calc(100% - 46px);
+  overflow-y: auto;
+  background-color: #eee;
 }
 .queue-detail {
   background-color: #eee;

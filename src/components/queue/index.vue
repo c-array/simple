@@ -54,6 +54,41 @@
                 </dl>
             </div>
         </div>
+        <div class="list" v-show="vm.tabId == 2">
+                <div class="list-item" v-for="item in 3">
+                    <div class="box">
+                        <span>取号中</span>
+                        <router-link to="/queue/detail">详情<i class="icon-right"></i></router-link>
+                    </div>
+                    <dl class="box-item">
+                        <dd>
+                            <span>NO</span>
+                            <span class="no success">D001</span>
+                        </dd>
+                        <dd>
+                            <span>姓名</span>
+                            <span>Array</span>
+                        </dd>
+                        <dd>
+                            <span>性别</span>
+                            <span>男</span>
+                        </dd>
+                        <dd>
+                            <span>手机号</span>
+                            <span>18201173456</span>
+                        </dd>
+                        <dd>
+                            <span>时间</span>
+                            <span>2018-04-03 20:22:30</span>
+                        </dd>
+                        <dd>
+                            <img src="../../assets/images/timg.jpg" alt="">
+                            <img src="../../assets/images/timg.jpg" alt="">
+                            <img src="../../assets/images/timg.jpg" alt="">
+                        </dd>
+                    </dl>
+                </div>
+            </div>
     </div>
 </template>
 <style scoped lang="less">
