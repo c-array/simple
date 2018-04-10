@@ -1,0 +1,96 @@
+.my {
+  background-color: #eee;
+  overflow-y: auto;
+}
+.my header {
+  position: relative;
+  background: url("../../../images/3.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+}
+.my header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.my header p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.my header span {
+  font-size: 30px;
+  vertical-align: middle;
+}
+.my header i {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  border-radius: 50%;
+  background-color: #e40242;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+.my header article {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  padding: 5px 15px;
+  background-color: #eee;
+  width: 130px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #666;
+}
+.my ul {
+  display: flex;
+  padding-top: 40px;
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+.my ul li {
+  flex: 1;
+  text-align: center;
+}
+.my ul li i {
+  font-size: 30px;
+  color: #69686d;
+}
+.my ul li p {
+  padding-top: 5px;
+  color: #737373;
+  font-size: 18px;
+}
+.my dl {
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.my dd {
+  display: flex;
+  align-items: center;
+}
+.my dd i {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.my dd section {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  border-bottom: 1px solid #eee;
+  padding: 15px 10px 15px 0;
+}
+.my dd section span {
+  font-size: 18px;
+  color: #767676;
+}
+.my dd section i {
+  font-size: 18px;
+}

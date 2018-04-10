@@ -1,0 +1,92 @@
+.analyze dl {
+  height: calc(100% - 46px);
+  overflow-y: auto;
+  background-color: #eee;
+}
+.analyze dl dd {
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.analyze dl dd.order {
+  background: url("../../../images/1.png") no-repeat;
+  background-size: 100% 100%;
+}
+.analyze dl dd.praise {
+  background: url("../../../images/2.png") no-repeat;
+  background-size: 100% 100%;
+}
+.analyze dl dd .title {
+  font-size: 18px;
+  color: #666;
+}
+.analyze dl dd section {
+  display: flex;
+  justify-content: space-between;
+}
+.analyze dl dd article {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  color: #666;
+}
+.analyze dl dd article span {
+  font-size: 40px;
+  color: #b72b50;
+}
+.analyze dl dd article p {
+  font-size: 18px;
+}
+.analyze dl dd .footer {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+.analyze dl dd .footer i {
+  font-size: 14px;
+}
+.analyze-detail ul {
+  height: calc(100% - 46px);
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 0 10px;
+}
+.analyze-detail ul li {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.analyze-detail ul li .lt {
+  display: flex;
+  align-items: center;
+}
+.analyze-detail ul li .lt span {
+  font-size: 30px;
+  color: #777;
+}
+.analyze-detail ul li .lt img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.analyze-detail ul li section {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.analyze-detail ul li section span {
+  font-size: 22px;
+  color: #666;
+}
+.analyze-detail ul li section .countup {
+  font-family: Calibri;
+  font-size: 35px;
+  color: #b72b50;
+}
+.analyze-detail ul li section i {
+  font-size: 30px;
+  color: #04be02;
+}

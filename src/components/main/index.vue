@@ -36,18 +36,12 @@
                     },
                     {
                         id:3,
-                        name:"分享",
-                        icon:'icon-share',
-                        url:'/main/share'
-                    },
-                    {
-                        id:4,
                         name:'消息',
                         icon:'icon-info',
                         url:'/main/info'
                     },
                     {
-                        id:5,
+                        id:4,
                         name:'我的',
                         icon:'icon-my',
                         url:'/main/my'

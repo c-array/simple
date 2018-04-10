@@ -90,6 +90,54 @@ export default new Router({
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
       }
+    },
+    {
+      path: '/analyze/detail/:type',
+      name: 'detail',
+      component: resolve => require(['@/components/analyze/detail'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/info/pay/:id/:name',
+      name: 'pay',
+      component: resolve => require(['@/components/info/pay'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/info/evaluate/:id/:name',
+      name: 'evaluate',
+      component: resolve => require(['@/components/info/evaluate'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/info/stores/:id/:name',
+      name: 'stores',
+      component: resolve => require(['@/components/info/stores'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/info/detail/:id/:name',
+      name: 'stores',
+      component: resolve => require(['@/components/info/detail'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/my/evaluate',
+      name: 'evaluate',
+      component: resolve => require(['@/components/my/evaluate'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
     }
   ]
 })
