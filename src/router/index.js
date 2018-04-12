@@ -61,7 +61,7 @@ export default new Router({
     },
     {
       path: '/queue/detail',
-      name: 'detail',
+      name: 'queue-detail',
       component: resolve => require(['@/components/queue/detail'],resolve),
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
@@ -93,7 +93,7 @@ export default new Router({
     },
     {
       path: '/analyze/detail/:type',
-      name: 'detail',
+      name: 'analyze-detail',
       component: resolve => require(['@/components/analyze/detail'],resolve),
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
@@ -109,7 +109,7 @@ export default new Router({
     },
     {
       path: '/info/evaluate/:id/:name',
-      name: 'evaluate',
+      name: 'info-evaluate',
       component: resolve => require(['@/components/info/evaluate'],resolve),
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
@@ -125,7 +125,7 @@ export default new Router({
     },
     {
       path: '/info/detail/:id/:name',
-      name: 'stores',
+      name: 'info-detail',
       component: resolve => require(['@/components/info/detail'],resolve),
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
@@ -133,7 +133,7 @@ export default new Router({
     },
     {
       path: '/my/evaluate',
-      name: 'evaluate',
+      name: 'my-evaluate',
       component: resolve => require(['@/components/my/evaluate'],resolve),
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,

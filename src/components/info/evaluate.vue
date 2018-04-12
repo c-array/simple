@@ -7,7 +7,7 @@
                 <section>
                     <p>刘君涛</p>
                     <article>17分钟前</article>
-                    <rater :disabled="true" :value="5" :max="5" active-color="#fead01"></rater>
+                    <rater :disabled="true" :font-size="24" :value="5" :max="5" active-color="#fead01"></rater>
                 </section>
                 <div class="conten">剪的很好，发型师很帅</div>
             </li>

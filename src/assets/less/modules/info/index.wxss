@@ -20,8 +20,8 @@
   border-bottom: 1px solid #eee;
 }
 .info li section p {
-  font-size: 25px;
-  color: #000;
+  font-size: 18px;
+  color: #333;
 }
 .info li section span {
   color: #ccc;
@@ -64,22 +64,23 @@
   padding: 0 15px;
 }
 .info-pay li section p {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 5px;
+  color: #333;
 }
 .info-pay li section span {
   color: #999;
-  font-size: 15px;
+  font-size: 14px;
 }
 .info-pay li section article {
   position: absolute;
-  right: 10px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #eee;
+  background-color: #dbdbdb;
   padding: 3px 15px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 12px;
   color: #fff;
 }
 .info-evaluate ul {
@@ -108,15 +109,16 @@
   padding: 0 15px;
 }
 .info-evaluate li section p {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 5px;
+  color: #333;
 }
 .info-evaluate li section article {
-  width: 100px;
-  background-color: #eee;
+  width: 82px;
+  background-color: #dbdbdb;
   padding: 3px 15px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 12px;
   color: #fff;
 }
 .info-evaluate li section .vux-rater {

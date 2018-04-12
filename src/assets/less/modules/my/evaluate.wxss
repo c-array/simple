@@ -1,0 +1,63 @@
+.evaluate {
+  background-color: #eee;
+}
+.evaluate .tab {
+  display: flex;
+  background-color: #fff;
+}
+.evaluate .tab li {
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+}
+.evaluate .tab li.active {
+  border-bottom: 2px solid #bc043d;
+}
+.evaluate .list {
+  height: calc(100% - 106px);
+  overflow-y: auto;
+}
+.evaluate .list li {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.evaluate .list section {
+  position: relative;
+  display: flex;
+}
+.evaluate .list section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.evaluate .list section article p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 5px;
+}
+.evaluate .list section article span {
+  color: #999;
+  font-size: 14px;
+}
+.evaluate .list section .rater {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+.evaluate .list section .rater .vux-rater {
+  margin-right: 5px;
+}
+.evaluate .list .content {
+  padding: 10px 0 0;
+  color: #666;
+}
+.evaluate .list .date {
+  text-align: right;
+  color: #999;
+  font-size: 12px;
+}
