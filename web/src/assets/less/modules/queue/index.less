@@ -1,0 +1,378 @@
+.queue{
+    ul{
+        position: absolute;
+        top: 32px;
+        right: -15px;
+        z-index: 100;
+        width: 140%;
+        background: #fff;
+        box-shadow: 0px 1px 1px 1px #eee;
+        height: 0;
+        transition: height 0.2s;
+        overflow: hidden;
+        &.active{
+            height: 160px;
+        }
+    }
+    li{
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        color: #666;
+    }
+    .select-status{
+        span{
+            vertical-align: middle;
+            font-size: 16px;
+        }
+        i{
+            padding-left: 20px;
+            vertical-align: middle;
+        }
+    }
+    .list{
+        background-color: #eee;
+        padding: 10px;
+        height: calc(~"100% - 90px");
+        overflow-y: auto;
+    }
+    
+    .list-item{
+        padding: 10px 0;
+        margin-bottom: 10px;
+        background-color: #fff;
+    }
+    .box{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        padding: 0 10px 10px;
+        span,a{
+            font-size: 20px;
+            color: #666;
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+    .box-item{
+        dd{
+            display: flex;
+            justify-content: space-between;
+            line-height: 40px;
+            padding: 0 10px;
+            color: #666;
+            font-size: 16px;
+            &:last-child{
+                padding-top: 10px;
+            }
+            button{
+                width: 49%;
+                margin: 0;
+                border-radius: 0;
+                height: 50px;
+                &::after{
+                    border-radius: 0; 
+                }
+            }
+            img{
+                width: 32%;
+                height: 32%;
+            }
+            span{
+                vertical-align: middle;
+                &.no{
+                    font-size: 30px;
+                    padding-top: 5px;
+                    color: #ff5722;
+                    &.success{
+                        color: #999;
+                    }
+                }
+            }
+            i{
+                vertical-align: top;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.content{
+    height: calc(~"100% - 46px");
+    overflow-y: auto;
+    background-color: #eee;
+}
+
+.queue-detail{
+    .vux-header-right{
+        top: 5px;
+    }
+    .switch{
+        button{
+            padding: 5px;
+            background-color: #E64340;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+    }
+    background-color: #eee;
+    section{
+        margin-top: 10px;
+        background-color: #fff;
+    }
+    article{
+        text-align: center;
+        padding: 10px 0;
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        p{
+            padding-top: 10px;
+        }
+    }
+    .history{
+        color: #333;
+        font-size: 14px;
+    }
+    li{
+        display: flex;
+        padding: 10px;
+        &.praise{
+            border-top: 1px solid #eee;
+            align-items: center; 
+            span{
+                color: #333;
+                font-weight: bold;
+            }
+        }
+        .d-rt{
+            flex: 1;
+            text-align: right;
+        }
+        &.space-between{
+            justify-content: space-between;
+            align-items: center;
+            .d-lt{
+                font-size: 16px;
+                color: #333;
+                font-weight: bold;
+            }
+        } 
+        .d-lt{
+            width: 100px;
+            font-size: 15px;
+            color: #333;
+        }
+        .describe{
+            flex: 1;
+            font-size: 15px;
+            color: #999;
+        }
+        .link{
+            flex: 1;
+            text-align: right;
+            color: #ccc;
+        }
+    }
+    .action{
+        display: flex;
+        i{
+            font-size: 16px;
+            padding: 0 5px;
+        }
+        a{
+            height: 25px;
+            line-height: 25px;
+            color: #666;
+            border: 1px solid #eee;
+            padding: 0 5px;
+            margin-left: 5px;
+            font-size: 14px;
+            &.active{
+                color: #f00;
+                border-color: #f00;
+            }
+        }
+    }
+    .reference{
+        span{
+            font-weight: bold;
+            color: #333;
+        }
+        .history-img{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0;
+            img{
+                width: 32%;
+                height: 32%;
+            }
+        }
+    }
+}
+
+.queue-user{
+    background-color: #eee;
+}
+
+.check-box{
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    &.check-sex{
+        .vux-checker-box{
+            display: block;
+            .check-item{
+                margin-right: 10px;
+            }
+        }
+    }
+    input{
+        width: 100%;
+        height: 35px;
+        margin-top: 15px;
+        background-color: #eee;
+        border-radius: 3px;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    .vux-checker-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .check-item{
+        padding: 0 17px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        margin-top: 10px;
+        margin-right: 10px;
+        color: #999;
+        background: #ffffff url("../../../images/check.png") no-repeat right bottom;
+        &:nth-child(5n+0){
+            margin-right: 0;
+        }
+    }
+    .check-item-selected{
+        background: #ffffff url("../../../images/checked.png") no-repeat right bottom;
+        border-color: #ff4a00;
+        color: #ff4a00;
+    }  
+    .vux-x-textarea{
+        margin-top: 15px;
+        background-color: #eee;
+        border-radius: 3px;
+        &::before{
+            border: none;
+        }
+        .weui-textarea{
+            background: none;
+        }
+    }  
+}
+
+.queue-evaluate{
+    background-color: #eee;
+    .evaluate-box{
+        background-color: #fff;
+        margin-bottom: 10px;
+        dt{
+            display: flex;
+            padding: 10px;
+            .user-info{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                article{
+                    padding: 0 10px 0;
+                }
+                p{
+                    font-size: 16px;
+                   &:last-child{
+                        padding-top:5px;
+                        font-size: 14px;
+                        color: #999;
+                   }
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+            }
+            .eval-right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex:1;
+                text-align: right;
+                .vux-rater{
+                    text-align: right;
+                }
+                span{
+                    font-size: 14px;
+                    padding-right: 5px;
+                    color: #999;
+                }
+            }
+        }
+        dd{
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            &.address{
+                align-items: center;
+            }
+            p{
+                font-size: 14px;
+                color: #666;
+            }
+            img{
+                width: 32%;
+                height: 32%;
+            }
+            article,span{
+                font-size: 14px;
+                color: #666;
+                &:first-child{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+.queue-reference{
+    .reference-box{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        li{
+            flex:0 0 33.33%;
+            background-color: #fff;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 10px 0;
+            &:nth-child(2n+0){
+                padding: 10px;
+            }
+        }
+        img{
+            width: 100%;
+            height: 90px;
+            margin-right: 2%;
+            margin-bottom: 5px;
+            &:nth-child(4n + 0){
+                margin-right: 0;
+            }
+        }
+    }
+}
