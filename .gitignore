@@ -2,3 +2,7 @@ admin/node_modules/
 web/node_modules/
 .vscode/
 web/dist/
+admin/node_modules/
+web/node_modules/
+.vscode/
+web/dist/
