@@ -8,16 +8,17 @@ import store from './vuex/store';
 Vue.config.productionTip = false
 
 //引入vux UI组件库
-import {Group,XSwitch,XButton,XHeader,Selector, Cell, Grid, GridItem, XInput } from 'vux';
+import {DatetimePlugin,Group,XSwitch,XButton,XHeader,Selector, Cell, Grid, GridItem, XInput } from 'vux';
 Vue.component('x-switch', XSwitch);
 Vue.component('group', Group);
 Vue.component('x-button', XButton);
 Vue.component('x-header', XHeader);
 Vue.component('selector', Selector)
-Vue.component('cell', Cell)
-Vue.component('grid', Grid)
-Vue.component('grid-item', GridItem)
-Vue.component('x-input', XInput)
+Vue.component('cell', Cell);
+Vue.component('grid', Grid);
+Vue.component('grid-item', GridItem);
+Vue.component('x-input', XInput);
+Vue.use(DatetimePlugin)
 
 /* eslint-disable no-new */
 new Vue({

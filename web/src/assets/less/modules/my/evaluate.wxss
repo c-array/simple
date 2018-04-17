@@ -25,6 +25,7 @@
 .evaluate .list section {
   position: relative;
   display: flex;
+  align-items: center;
 }
 .evaluate .list section img {
   width: 50px;

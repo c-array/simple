@@ -6,10 +6,10 @@
             <article>高级发型师</article>
         </header>
         <ul>
-            <li>
+            <router-link tag="li" to="/my/achievement">
                 <i class="icon-record"></i>
                 <p>业绩</p>
-            </li>
+            </router-link>
             <router-link tag="li" to="/my/evaluate">
                 <i class="icon-evaluate1"></i>
                 <p>评价</p>
