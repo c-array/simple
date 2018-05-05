@@ -10,7 +10,7 @@
         <ol class="list">
             <li v-for="item in vm.isTab">
                 <section>
-                    <img src="../../assets/images/timg.jpg" alt="">
+                    <img src="../../../assets/images/timg.jpg" alt="">
                     <article>
                         <p>浩浩先生</p>
                         <span>183****3456</span>
@@ -26,7 +26,7 @@
     </div>
 </template>
 <style scoped lang="less">
-    @import '../../assets/less/modules/my/evaluate.less';
+    @import '../../../assets/less/modules/my/evaluate.less';
 </style>
 <script>
     import {mapState} from "vuex";

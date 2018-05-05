@@ -134,7 +134,7 @@ export default new Router({
     {
       path: '/my/evaluate',
       name: 'my-evaluate',
-      component: resolve => require(['@/components/my/evaluate'],resolve),
+      component: resolve => require(['@/components/my/evaluate/index'],resolve),
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
       }
@@ -142,7 +142,31 @@ export default new Router({
     {
       path: '/my/achievement',
       name: 'my-achievement',
-      component: resolve => require(['@/components/my/achievement'],resolve),
+      component: resolve => require(['@/components/my/achievement/index'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/my/work',
+      name: 'my-work',
+      component: resolve => require(['@/components/my/work/index'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/my/work-form',
+      name: 'my-work-form',
+      component: resolve => require(['@/components/my/work/form'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/my/attendance',
+      name: 'my-attendance',
+      component: resolve => require(['@/components/my/attendance/index'],resolve),
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
       }

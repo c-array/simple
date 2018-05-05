@@ -1,7 +1,7 @@
 <template>
     <div class="inner main">
         <div class="main-body">
-            <router-view></router-view>
+            <router-view class="inner"></router-view>
         </div>
         <tabbar>
             <tabbar-item :selected="item.id == currentRouterId" v-for="(item,index) in list" :key="item.id" :link="item.url + '/' + item.id">
@@ -46,7 +46,7 @@
                         icon:'icon-my',
                         url:'/main/my'
                     }
-                ]      
+                ]
             }
         },
         components: {

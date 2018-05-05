@@ -15,3 +15,62 @@
 .achievement .date i {
   color: #fff;
 }
+.achievement .tab {
+  display: flex;
+}
+.achievement .tab li {
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+}
+.achievement .tab li span {
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+}
+.achievement .tab li p {
+  color: #666;
+}
+.achievement dl {
+  background-color: #eee;
+  padding-top: 10px;
+  height: calc(100% - 110px);
+  overflow-y: auto;
+}
+.achievement dl dd {
+  display: flex;
+  padding: 15px 10px;
+  margin-bottom: 1px;
+  background-color: #fff;
+}
+.achievement dl img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.achievement dl section {
+  flex: 1;
+  padding-left: 10px;
+}
+.achievement dl section h3 {
+  font-size: 16px;
+  color: #333;
+}
+.achievement dl section p,
+.achievement dl section span {
+  color: #666;
+  font-size: 16px;
+}
+.achievement dl section article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.achievement dl section article .tag {
+  background-color: #eee;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #666;
+}
