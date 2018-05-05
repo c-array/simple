@@ -5,4 +5,5 @@ web/dist/
 admin/node_modules/
 web/node_modules/
 .vscode/
+.idea/
 web/dist/
