@@ -24,52 +24,10 @@
       </router-link>
     </ul>
     <dl>
-      <dd>
-        <i class="icon-rice"></i>
+      <dd @click="$router.push({path:item.url})" v-for="item in list" :key="item.id">
+        <i :class="item.icon"></i>
         <section>
-          <span>吃饭时间</span>
-          <i class="icon-right"></i>
-        </section>
-      </dd>
-      <dd>
-        <i class="icon-bond"></i>
-        <section>
-          <span>优惠券</span>
-          <i class="icon-right"></i>
-        </section>
-      </dd>
-      <dd>
-        <i class="icon-organize"></i>
-        <section>
-          <span>组织</span>
-          <i class="icon-right"></i>
-        </section>
-      </dd>
-      <dd>
-        <i class="icon-set"></i>
-        <section>
-          <span>设置</span>
-          <i class="icon-right"></i>
-        </section>
-      </dd>
-      <dd>
-        <i class="icon-archives"></i>
-        <section>
-          <span>档案建设</span>
-          <i class="icon-right"></i>
-        </section>
-      </dd>
-      <dd>
-        <i class="icon-warrant"></i>
-        <section>
-          <span>授权</span>
-          <i class="icon-right"></i>
-        </section>
-      </dd>
-      <dd>
-        <i class="icon-approval"></i>
-        <section>
-          <span>考勤审批</span>
+          <span>{{item.name}}</span>
           <i class="icon-right"></i>
         </section>
       </dd>
@@ -81,6 +39,54 @@
 </style>
 <script>
   export default {
-    name: "my"
+    name: "my",
+    data () {
+      return {
+        list:[
+          {
+            id:1,
+            name:"吃饭时间",
+            url:"/my/eat",
+            icon:"icon-rice"
+          },
+          {
+            id:2,
+            name:"优惠券",
+            url:"/my/coupon",
+            icon:"icon-bond"
+          },
+          /* {
+            id:3,
+            name:"组织",
+            url:"/my/eat",
+            icon:"icon-organize"
+          }, */
+          {
+            id:4,
+            name:"设置",
+            url:"/my/set",
+            icon:"icon-set"
+          },
+          {
+            id:5,
+            name:"档案建设",
+            url:"/my/eat",
+            icon:"icon-archives"
+          },
+          {
+            id:6,
+            name:"授权",
+            url:"/my/eat",
+            icon:"icon-warrant"
+          },
+          {
+            id:7,
+            name:"考勤审批",
+            url:"/my/eat",
+            icon:"icon-approval"
+          }
+        ]
+      }
+    }
   }
 </script>

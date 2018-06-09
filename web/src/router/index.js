@@ -178,6 +178,38 @@ export default new Router({
       meta: { // 添加该字段，表示进入这个路由是需要登录的
         requireAuth: true,
       }
+    },
+    {
+      path: '/my/eat',
+      name: 'my-eat',
+      component: resolve => require(['@/components/my/eat/index'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/my/coupon',
+      name: 'my-coupon',
+      component: resolve => require(['@/components/my/coupon/index'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/my/set',
+      name: 'my-set',
+      component: resolve => require(['@/components/my/set/index'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
+    },
+    {
+      path: '/my/modifyPwd',
+      name: 'my-modifyPwd',
+      component: resolve => require(['@/components/my/set/modify-pwd'],resolve),
+      meta: { // 添加该字段，表示进入这个路由是需要登录的
+        requireAuth: true,
+      }
     }
   ]
 })

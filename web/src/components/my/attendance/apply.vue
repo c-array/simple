@@ -3,7 +3,7 @@
   <div class="inner apply">
     <x-header title="考勤申请"></x-header>
     <ul class="step" v-show="vm.step != 4">
-      <li :class="{active:vm.step == item.id}" v-for="(item,index) in steps">
+      <li :class="{active:vm.step == item.id}" :key="index" v-for="(item,index) in steps">
         <i v-if="!item.status" :class="'icon ' + item.icon"></i>
         <i v-else class="icon icon-success"></i>
         <p>{{item.name}}</p>
