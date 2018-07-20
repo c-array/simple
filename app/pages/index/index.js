@@ -1,54 +1,75 @@
-//index.js
-//获取应用实例
-const app = getApp()
+let app = getApp();
 
-Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
+// 页面数据
+let data = {
+  mapHeight: 0,
+  userLocatio: null,
+  lot: null,
+  lat: null,
+  markers: []
+};
+
+// 页面方法
+let methods = {
+  getLocation() {
+    // 获取地理位置
+    wx.getLocation({
+      type: "gcj02",
+      success: res => {
+        let { latitude, longitude, speed, accuracy } = res;
+        // 店铺标记数据
+        let markers = [
+          {
+            id: 1,
+            latitude: latitude,
+            longitude: longitude,
+            width: 50,
+            height: 50,
+            title: "北京"
+          },
+          {
+            id: 2,
+            latitude: 23.099994,
+            longitude: 113.34452,
+            width: 50,
+            height: 50,
+            title: "深圳"
+          }
+        ];
         this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
+          userLocatio: res,
+          lot: longitude,
+          lat: latitude,
+          markers
+        });
       }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+    });
+  },
+  // 全屏显示
+  fullScreen () {
+    try{
+      let sysInfo = wx.getSystemInfoSync();
+      let curHeight = this.data.mapHeight;
+      let mapHeight = curHeight > 0 ? 0 : sysInfo.windowHeight;
+      this.setData({
+        mapHeight
+      });
+    }catch(e) {
+      console.error('获取设备信息是出错');
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  // 定位当前
+  position () {
+    console.log(11);
+    this.mapCtx.moveToLocation();
   }
-})
+};
+
+Page({
+  data,
+  ...methods,
+  onLoad() {
+    this.mapCtx = wx.createMapContext("map");
+    this.getLocation();
+  }
+});

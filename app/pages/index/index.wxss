@@ -1,21 +1,167 @@
 /**index.wxss**/
-.userinfo {
+.shop-map {
+  height: 500rpx;
+  position: relative;
+}
+
+.shop-map map {
+  width: 100%;
+  height: 100%;
+}
+
+.full-screen,
+.position {
+  position: absolute;
+  right: 35rpx;
+  bottom: 50rpx;
+  font-size: 26rpx;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 8rpx 13rpx;
+  color: #fff;
+}
+
+.position {
+  right: inherit;
+  left: 35rpx;
+}
+
+.swiper-banner {
+  padding: 25rpx;
+  height: 220rpx;
+  position: relative;
+  /* top: -55rpx; */
+}
+
+.swiper-banner swiper {
+  border-radius: 10rpx;
+  overflow: hidden;
+  height: 220rpx;
+}
+
+.swiper-banner swiper-item {
+  background-color: brown;
+  border-radius: 10rpx;
+}
+
+.swiper-banner swiper-item:nth-child(2) {
+  background-color: blue;
+}
+
+.swiper-banner swiper-item:nth-child(3) {
+  background-color: cornflowerblue;
+}
+
+.item-list {
+  padding: 25rpx 15rpx;
+  /* border-bottom: 1px solid #d9d9d9; */
+  border-top: 1px solid #d9d9d9;
+}
+
+.item-head {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  color: #333;
+  font-size: 35rpx;
+}
+
+.item-head .title {
+  font-weight: bold;
+}
+
+.item-head .distance {
+  font-size: 32rpx;
+}
+
+.item-dec {
+  font-size: 28rpx;
+  color: #555;
+  padding: 7px 0;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.item-dec .business text {
+  margin-right: 8rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.item-dec .business text .make {
+  font-size: 24rpx;
+  margin-right: 0;
 }
 
-.usermotto {
-  margin-top: 200px;
+.item-dec .del-line {
+  text-decoration: line-through;
+  color: #9f9f9f;
+}
+
+.item-dec .stauts {
+  color: #e63d4d;
+}
+
+.preferential {
+  display: flex;
+  align-items: center;
+}
+
+.preferential .pre-item {
+  display: inline-block;
+  font-size: 26rpx;
+  margin-right: 15rpx;
+  color: #999;
+}
+
+.pre-status {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  background-color: #e63d4d;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 30rpx;
+  margin-right: 5rpx;
+}
+
+.item-footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.item-footer .address {
+  flex: 1;
+}
+.people-count {
+  display: flex;
+  margin: 15rpx 0;
+}
+.people-count text {
+  padding: 5rpx 12rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid #ddd;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.shop-address {
+  font-size: 26rpx;
+  color: #666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.btn {
+  width: 180rpx;
+  height: 65rpx;
+  border-radius: 12rpx;
+  background-color: #e63d4d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+.button-hover {
+  opacity: 0.95;
 }

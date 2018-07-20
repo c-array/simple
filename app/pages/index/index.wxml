@@ -1,13 +1,53 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!-- index.wxml -->
+<view class="main">
+  <view class="shop-map" v-if="{{userLocatio}}" style="{{mapHeight > 0 ? 'height: ' + mapHeight + 'px;' : ''}}">
+    <map id="map" longitude="{{lot}}" latitude="{{lat}}" markers="{{markers}}" scale="14" show-location="true"></map>
+    <cover-view class="full-screen" bindtap="fullScreen">
+      <cover-view wx:if="{{mapHeight > 0}}">放小</cover-view>
+      <cover-view wx:else>放大</cover-view>
+    </cover-view>
+    <cover-view class="position" bindtap="position">定位当前</cover-view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="swiper-banner">
+    <swiper indicator-dots="true" circular="true">
+      <swiper-item></swiper-item>
+      <swiper-item></swiper-item>
+      <swiper-item></swiper-item>
+    </swiper>
+  </view>
+  <view class="shop-item">
+    <view class="item-list" wx:for="{{10}}" wx:key="{{index}}">
+      <view class="item-head">
+        <text class="title">万象天成</text>
+        <text class="distance">1952.0km</text>
+      </view>
+      <view class="item-dec">
+        <view class="business">
+          <text>洗剪吹</text>
+          <text><text class="make">￥</text>38</text>
+          <text class="del-line"><text class="make">￥</text>88</text>
+        </view>
+        <view class="stauts">离我最近</view>
+      </view>
+      <view class="preferential">
+        <view class="pre-item">
+          <text class="pre-status">减</text>
+          <text>首单满30减3</text>
+        </view>
+        <view class="pre-item">
+          <text class="pre-status">减</text>
+          <text>首单满30减3</text>
+        </view>
+      </view>
+      <view class="item-footer">
+          <view class="address">
+            <view class="people-count">
+              <text>3人正在剪发</text>
+            </view>
+            <view class="shop-address">北京市海淀区学院南路A座508</view>
+          </view>
+          <button class="btn" hover-class="button-hover">去剪发</button>
+      </view>
+    </view>
   </view>
 </view>
